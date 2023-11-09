@@ -1,0 +1,336 @@
+*{
+     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+
+.Header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.Header .item{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Header .item li{
+    width: 120px;
+    text-align: center;
+    transition: ease 0.5s;
+   position: relative;
+}
+
+.Header > .item > li > a{
+    color: #fff; 
+    line-height: 60px;
+}
+
+.Header .item li a{ 
+    text-decoration: none;
+}
+
+.Header .subnar{
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    list-style: none;
+    box-shadow: 0 0 10px rgb(53, 39, 39);
+    transition: ease 0.7s;
+}
+
+.Header .subnar a{
+     color: black; 
+     line-height: 38px;
+}
+
+.item li:hover{
+    background-color: rgb(56, 42, 68);
+}
+
+li:hover .subnar{
+    display: block;
+}
+
+
+
+.Header .Search{
+    width: 70px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.Search i {
+    padding: 0 24px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.Header .Search:hover{
+    background-color: rgb(200, 57, 57);
+}
+
+.Slider{
+    margin-top: 60px;
+    padding-top: 50%;
+    background: url('https://c.pxhere.com/photos/05/65/drummer_music_set_drum_kit_band_beat_drummers-1021009.jpg!d') top center / cover no-repeat;
+}
+
+.Slider .textcontent{
+    position: absolute;
+    bottom: 40px;
+    color: #fff;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.Slider .asess{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.Slider .ct{
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+
+.Content .allsection{
+    width: 800px;
+    margin:auto;
+    margin-top: 100px;
+}
+
+.Content .heading,.contending{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Content .heading{
+    letter-spacing: 4px;
+}
+
+.Content .contending{
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.Content .about{
+    padding: 15px 0;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.classlist{
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.classlist .fullname{
+     float: left;
+    width: 33.3333%;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.classlist .fullname img{
+    width: 180px;
+    border-radius: 10px;
+}
+
+.fullname .textname {
+    font-size: 15px;
+}
+
+.tour{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+}
+
+
+.month{
+    width: 800px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.month li{
+    font-size: 15px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #000;
+    opacity: 0.7;
+}
+
+.month .sold{
+    color: #fff;
+    background-color: rgb(236, 42, 42);
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-left: 12px;
+    opacity: 1;
+}
+
+.month .opasity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+     line-height: 24px;
+}
+
+.describe{
+   width: 800px;
+   margin: auto;
+    margin-top: 32px;  
+}
+
+.describe .bodydescribe{
+    float: left;
+    width: 33.333%;
+    padding: 0 8px;
+}
+
+.describe .bodydescribe img{
+    width: 100%;
+    display: block;
+}
+
+.describe .bodydescribe img:hover{
+    opacity: 0.7;
+}
+
+
+.describe .addsess{
+    background-color: #fff;
+    padding: 16px;
+}
+
+.addsess .city{
+    font-size: 20px;
+}
+
+.addsess .day{
+    opacity: 0.8;
+    padding: 10px 0;
+}
+
+.addsess .weather{
+    line-height: 18px;
+}
+
+.addsess .tickers{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-top: 12px;
+    transition: ease 0.5s;
+}
+
+.fan .fanbody{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addsess .tickers:hover{
+    background-color: #ccc;
+}
+
+
+.allsection .add li{
+    list-style: none;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.allsection .add li i{
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.fan input{
+    display: block;
+    padding: 10px 30px;
+    margin: 10px 0;
+}
+
+.fan .send{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    float: right;
+    background-color: #000;
+    display: inline-block;
+    transition: ease 0.5s;
+}
+
+.fan .send:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+
+.bgr{
+    margin-top: 160px;
+    
+}
+
+.bgr img{
+    width: 100%;
+}
+
+
+.Fooder{
+    text-align: center;
+    padding: 64px 16px;
+    margin-top: 100px;
+}
+
+.Fooder .icon i{
+    font-size: 30px;
+    margin:0 3px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.Fooder i:hover{
+    opacity: 1;
+}
+
+.Fooder .end{
+    font-size: 18px;
+    padding: 25px 0;
+   
+}
+
+
+.Fooder .end a{
+    color: #000;
+}
+
+
+
+
