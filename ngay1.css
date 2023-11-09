@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: aqua;
+}
+
+.container{
+    width: 319px;
+    height: 400px;
+    background-color: #272d40;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 15px;
+}
+
+.container .icon{
+    display: flex;
+    justify-content:space-between ;
+    color: #fff;
+}
+
+.container .icon i{
+    font-size: 20px;
+    padding: 20px 20px 0 20px;
+    cursor: pointer;
+}
+
+.dynamic{
+    width: 100%;
+}
+
+.dynamic .shoe{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin-left: 35px;
+    background-image: none;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.content{
+    text-align: center;
+}
+
+.container .price{
+    color: #027bcb;
+    transition: 0.5s;
+}
+
+.content .manny{
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+
+.transfer .size h3{
+    color: #fff;
+    padding-left: 12px;
+    font-size: 18px;
+}
+
+
+
+
+.transfer .size .order{
+    display: flex;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.transfer .size .order li a{
+    text-decoration: none;
+    background-color: #ccc;
+    margin: 0 8px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    color: #000;
+}
+.transfer .color h3{
+    color: #fff;
+    padding-left: 12px;
+    font-size: 18px;
+}
+
+.transfer .color{
+    display: flex;
+}
+.color ul{
+    display: flex;
+}
+
+.color ul li{
+    list-style: none;
+}
+.color ul li .color1{
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color:  green; 
+    padding: 1px 10px;
+}
+
+.color ul li .color2{
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color:  red; 
+    padding: 1px 10px;
+}
+
+.color ul li .color3{
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: yellow; 
+    padding: 1px 10px;
+}
+
+.hovers{
+    padding-top: 100px;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.2;
+}
+
+
+.tick{
+    display: flex;
+}
+
+.tick .ticker{
+    background-color: #027bcb;
+    font-size: 20px;
+    padding: 8px 15px;
+    margin: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    transition: ease-in-out 0.2s;
+    transition-delay: 0.2;
+}
+
+.tick .ticker:hover{
+   transform: scale(0.9);
+}
+
+
+.container:hover .shoe{
+    transform: translateY(-90px) rotate(-20deg);
+}
+.container:hover .price{
+    transform: translateY(-120px) translateX(-40px);
+}
+
+.container:hover .manny{
+    transform: translateY(-110px) translateX(-120px);
+}
+
+.container:hover .hovers{
+    opacity: 1;
+    transform: translateY(-200px);
+}
+
+
+
+
+
+
+
+
+
