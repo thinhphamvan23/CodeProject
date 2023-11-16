@@ -1,0 +1,83 @@
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    height: 100vh;
+    margin: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .show{
+    width: 22.2222%;
+    height: 167px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.container .show img{
+    width: 267px;
+    height: 167px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container .show:hover img{
+    transform: scale(1.5);
+}
+
+ .imgbig{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+} 
+
+.imgbig.display{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.imgbig .big{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+
+.control{
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next{
+    right: 15px;
+}
+.prev{
+    left: 15px;
+}
+
+.imgbig .close i{
+    font-size: 50px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
